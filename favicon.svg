@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- ARVEUR icon (simplified mark), white on transparent (from ARVEUR_Logo_Drafts.svg, V8 ICON):
+       disk XOR delta, i.e. the delta cut from the disk plus its tips outside it -->
+  <path fill="#fff" fill-rule="evenodd" d="M5 45a40 40 0 1 0 80 0a40 40 0 1 0-80 0ZM5 50 95 5 5 95 43 44Z"/>
+</svg>
