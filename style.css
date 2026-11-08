@@ -1,0 +1,128 @@
+:root {
+  --bg: #000;
+  --fg: #fff;
+  --muted: #8c8c8c;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; margin: 0; }
+
+html, body { height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+h1 { line-height: 0; }
+
+.logo {
+  display: block;
+  width: min(36rem, 85vw);
+  height: auto;
+}
+
+.wordmark {
+  font-size: clamp(3rem, 12vw, 7rem);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  letter-spacing: 0.02em;
+}
+
+a { color: var(--fg); }
+
+footer {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus-visible {
+  color: var(--fg);
+}
+
+footer .sep { margin: 0 0.4em; }
+
+/* --- Legal pages (impressum.html, privacy.html) --- */
+.legal main {
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
+  width: 100%;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3rem 1rem 4rem;
+  text-align: left;
+}
+
+.legal .back {
+  align-self: flex-start;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.legal .back:hover { color: var(--fg); }
+
+.legal h1 {
+  line-height: 1.2;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  margin-top: 2.5rem;
+}
+
+.legal h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 2rem 0 0.5rem;
+}
+
+.legal p,
+.legal li,
+.legal address {
+  color: #d0d0d0;
+  line-height: 1.6;
+  font-style: normal;
+}
+
+.legal p + p,
+.legal p + address,
+.legal ul + p { margin-top: 0.75rem; }
+
+.legal ul { padding-left: 1.25rem; margin-top: 0.5rem; }
+
+.legal .sub,
+.legal .updated {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
